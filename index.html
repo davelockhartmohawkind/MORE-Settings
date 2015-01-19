@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML>
+<html  manifest="appcache.manifest">
+    <head>
+
+        <title>com.Mohawkind.MORE-Settings</title>
+  <!-- CSS
+  ================================================== -->
+	
+    <link rel="stylesheet" href="styles.css">
+        <!-- Mobile Specific Metasf
+  ================================================== -->
+
+         <!-- Favicon
+	================================================== -->
+	<link rel="shortcut icon" href="Content/images/icons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="Content/images/icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="Content/images/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="Content/images/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" href="Content/images/icons/apple-touch-icon-114x114.png"/>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" >
+
+          <!-- Javacript
+	================================================== -->
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script> 
+    <script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var oldState = "";
+        try{
+            if (window.navigator == undefined) {
+                alert("no navigator");
+                
+            }
+           
+            if (typeof app !== "undefined") {
+                app.initialize();
+            }
+            
+        } catch (err) {
+            alert('error:' + err.message);
+        }
+      
+     
+    </script>
+
+    </head>
+    <body  class="mpa_login" style="background-color: #ffffff;" >
+ 
+        
+        <script type="text/javascript">
+            var MOREstatus = "";
+
+
+         </script>
+
+        
+       
+
+        <div class="logobox">
+           
+            <h3 style="align-content:center"><div><img  src="images/settings-7-64.png" /></div>MORE Settings
+
+            </h3>
+        
+            <div id="startloadbox" style="align-content:center">
+                <h5 id="loadmsg">Testing Connection <span id="cspeed"></span></h5>
+               
+            </div>
+             <a href="javascript:window.location.href='index.html';" style="display:none" class="btn_menu"  id="try_again">Try Again</a>
+
+        </div>
+        <script type="text/javascript" charset="utf-8" src="startup.js"></script>
+
+</body>
+  
+</html>
